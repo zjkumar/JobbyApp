@@ -4,6 +4,7 @@ import Login from './components/Login'
 import Home from './components/Home'
 import Jobs from './components/Jobs'
 import ProtectedRoute from './components/ProtectedRoute'
+import NotFound from './components/NotFound'
 
 import './App.css'
 
@@ -64,6 +65,7 @@ const App = () => (
       employmentTypesList={employmentTypesList}
       salaryRangesList={salaryRangesList}
     />
+    <NotFound />
   </Switch>
 )
 
