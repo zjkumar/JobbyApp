@@ -1,0 +1,72 @@
+.home-body-layout-sm {
+  padding: 30px 15px 30px 15px;
+  background-image: url('https://assets.ccbp.in/frontend/react-js/home-sm-bg.png');
+}
+
+.home-body-layout-lg {
+  padding: 80px 40px 80px 40px;
+  background-image: url('https://assets.ccbp.in/frontend/react-js/home-lg-bg.png');
+}
+
+.home-body-layout-sm,
+.home-body-layout-lg {
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.home-heading-sm {
+  font-size: 32px;
+}
+
+.home-heading-lg {
+  font-size: 64px;
+}
+
+.home-heading-sm,
+.home-heading-lg {
+  font-weight: bold;
+}
+
+.home-heading-sm,
+.home-heading-lg,
+.home-description-sm,
+.home-description-lg {
+  color: white;
+  font-family: 'Roboto';
+  margin-bottom: 28px;
+  margin-bottom: 28px;
+}
+
+.home-description-sm {
+  font-size: 15px;
+}
+.home-description-lg {
+  font-size: 22px;
+}
+
+.home-description-sm,
+.home-description-lg {
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+.btn-sm,
+.btn-lg {
+  background-color: #6366f1;
+  color: white;
+  font-family: 'Roboto';
+  border: none;
+  border-radius: 4px;
+}
+
+.btn-sm {
+  width: 80px;
+  height: 31px;
+  font-size: 12px;
+}
+
+.btn-lg {
+  font-size: 14px;
+  width: 120px;
+  height: 48px;
+}

@@ -1,0 +1,12 @@
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .loader-container {
+    min-height: 60%;
+    min-width: 60%;
+  }
+}

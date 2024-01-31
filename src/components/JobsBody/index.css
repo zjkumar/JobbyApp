@@ -1,0 +1,35 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.jobs-body-layout-sm {
+  padding: 30px 15px 30px 15px;
+  background-color: #000000;
+  min-height: 100vh;
+}
+
+.jobs-body-layout-lg {
+  display: flex;
+  background-color: #000000;
+  padding: 28px 35px;
+}
+
+.sidebar-section {
+  margin-right: 10px;
+  max-width: 220px;
+  min-width: 24%;
+}
+.body-section {
+  min-width: 60%;
+  margin-left: 10px;
+}
+
+@media (min-width: 1024px) {
+  .jobs-body-layout-lg {
+    padding: 48px 59px;
+  }
+  .sidebar-section {
+    min-width: 280px;
+  }
+}

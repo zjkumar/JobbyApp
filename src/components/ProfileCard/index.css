@@ -1,0 +1,102 @@
+.profile-details-loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 140px;
+  max-height: 140px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.breakline {
+  border: 1px solid white;
+}
+
+.profile-card {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/profile-bg.png');
+  background-size: cover;
+  padding: 18px 12px;
+  margin-bottom: 20px;
+}
+
+.profile-avatar {
+  height: 30px;
+  margin-bottom: 8px;
+}
+
+.profile-name {
+  color: #6366f1;
+  font-family: 'Roboto';
+  font-size: 14px;
+  margin-bottom: 13px;
+}
+
+.profile-shortbio {
+  color: #121212;
+  font-family: 'Roboto';
+  margin: 0px;
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.reload-profile-details-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 140px;
+  max-height: 140px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.reload-profile-details-btn {
+  background-color: #4f46e5;
+  color: #ffffff;
+  border: none;
+  font-size: 12px;
+  font-family: 'Roboto';
+  border-radius: 3px;
+}
+
+@media (max-width: 767px) {
+  .profile-card {
+    border-radius: 21px 21px 15px 15px;
+    max-height: 130px;
+  }
+  .reload-profile-details-btn {
+    height: 30px;
+    width: 72px;
+  }
+}
+@media (min-width: 768px) {
+  .profile-card {
+    border-radius: 15px;
+    min-height: 170px;
+  }
+  .profile-avatar {
+    height: 45px;
+  }
+  .profile-name {
+    font-size: 18px;
+  }
+  .profile-shortbio {
+    margin-top: 12px;
+  }
+  .reload-profile-details-btn {
+    height: 35px;
+    width: 76px;
+  }
+}
+@media (min-width: 1024px) {
+  .profile-card {
+    padding: 33px 20px;
+  }
+  .profile-avatar {
+    height: 58px;
+  }
+  .profile-name {
+    font-size: 20px;
+  }
+
+  .profile-shortbio {
+    font-size: 14px;
+  }
+}
