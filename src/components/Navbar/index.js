@@ -12,12 +12,10 @@ import {useMediaQuery} from 'react-responsive'
 
 import Cookies from 'js-cookie'
 
-import * as Icon from 'react-bootstrap-icons'
-
 import './index.css'
 
 const SmallNavbar = props => {
-  const handleLogout = event => {
+  const handleLogout = () => {
     Cookies.remove('jwt_token')
     const {history} = props
     history.replace('/login')
@@ -55,7 +53,7 @@ const SmallNavbar = props => {
 }
 
 const LargeNavbar = props => {
-  const handleLogout = event => {
+  const handleLogout = () => {
     Cookies.remove('jwt_token')
     const {history} = props
     history.replace('/login')
@@ -98,7 +96,6 @@ const LargeNavbar = props => {
 
 const Navbar = props => {
   const {history} = props
-  //   console.log(history)
   const isExsmallAndSmallDevice = useMediaQuery({query: '(max-width: 767px)'})
 
   return isExsmallAndSmallDevice ? (
