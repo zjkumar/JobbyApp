@@ -188,9 +188,17 @@ class Jobs extends Component {
     this.setState({minimumSalary: salary}, this.getJobs)
   }
 
+  getCorrectEmployeeType = (employeeType, type) => {
+    if (employeeType.includes(type)){
+      return employeeType.filter(each => each !== type)
+
+    }
+    return [...employeeType, type]
+  }
+
   changeEmployeeList = type => {
     this.setState(
-      prev => ({employeeType: [...prev.employeeType, type]}),
+      prev => ({employeeType: this.getCorrectEmployeeType(prev.employeeType, type)}),
       this.getJobs,
     )
   }

@@ -42,13 +42,14 @@ const FiltersGroup = props => {
   }
 
   const renderTypeOfEmployment = () => {
-    const {employmentTypesList} = props
+    const {employmentTypesList, changeEmployeeList} = props
+    console.log(employmentTypesList, 'this is employment types list', changeEmployeeList)
     return (
       <div className="employment-type-container">
         <h1 className="employment-type-heading"> Type of Employment</h1>
         <ul className="employee-type-list-container">
           {employmentTypesList.map(eachEmployeeType => {
-            const {changeEmployeeList} = props
+            
             const onSelectEmployeeType = event => {
               changeEmployeeList(event.target.value)
             }
